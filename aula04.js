@@ -1,0 +1,23 @@
+//Veja abaixo exemplo de como e quando usar as crases
+
+let nome = 'Arthur'; // Isso é uma string, ou seja, um texto
+let idade = 16; // Número usados sem aspas (simples ou duplas)
+
+let mensagem = `Ola, sou o ${nome} e tenho ${idade} anos`; //Criei uma variavel chamada mensagem para exibir o texto contendo a variavel nome e idade do usuário
+
+console.log(mensagem);
+
+// Lição 1: criar uma mensagem para informar profissão e salario de um trabalhador
+let profissao = 'Programador'; 
+let salario = 3000; 
+
+let teste1 = `ele é um ${profissao} e ele recebe por mês ${salario} reis`;
+
+console.log(teste1);
+//lição 2: cirar uma mensagem para informar a raça de idade de um animal
+
+//let é uma keyword usada para declarar variáveis. Diferentemente da keyword var, as variáveis declaradas com let têm escopo de bloco, o que significa que são visíveis apenas dentro do bloco de código onde foram declaradas (por exemplo, dentro de um if, for, ou dentro de uma função). 
+
+//keyword = Uma palavra-chave é uma palavra que resume os temas principais de um texto. Identifica ideias e temas importantes para servir de referência a pesquisas. Um único parágrafo pode conter várias palavras-chave.
+
+//As aspas simples (') e aspas duplas (") são usadas para definir strings, enquanto a crase (``) é usada para criar template literals. As aspas simples e duplas são intercambiáveis e funcionam de forma idêntica para definir strings normais. A crase, por outro lado, permite a inserção de expressões JavaScript dentro da string, facilitando a interpolação de variáveis e a criação de strings mais complexas. 
