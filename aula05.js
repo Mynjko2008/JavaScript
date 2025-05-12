@@ -29,12 +29,16 @@ console.log(descricao1);
 
 // Bloco 3
 let mae = "Laura";
-let salario1 = 5999;
+let salario1 = 6000;
 let pai = "Arthur";
 let salario2 = 12600;
 let filho = "Joseph";
 let salario3 = 1500;
 let filha = "Robin";
 let salario4 = 1500;
-let descricao2 = ``;
+
+let soma = salario1 + salario2 + salario3 + salario4;
+let quantidade = 4;
+let media = soma/quantidade;
+let descricao2 = `A Familia Mynjko composta pelo ${pai} pela ${mae} e pelos seus filhos ${filho} e ${filha}, ganham uma media de ${media} reais `;
 console.log(descricao2);
