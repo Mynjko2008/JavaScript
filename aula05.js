@@ -38,7 +38,6 @@ let filha = "Robin";
 let salario4 = 1500;
 
 let soma = salario1 + salario2 + salario3 + salario4;
-let quantidade = 4;
-let media = soma/quantidade;
-let descricao2 = `A Familia Mynjko composta pelo ${pai} pela ${mae} e pelos seus filhos ${filho} e ${filha}, ganham uma media de ${media} reais `;
+
+let descricao2 = `A Familia Mynjko composta pelo ${pai} pela ${mae} e pelos seus filhos ${filho} e ${filha}, todos juntos ganham ${soma} reais `;
 console.log(descricao2);
