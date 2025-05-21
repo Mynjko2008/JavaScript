@@ -1,0 +1,15 @@
+body{
+    background-color: black; /* Cor de fundo preta */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 50px; /* Margem superior */
+    color: white; /* Cor do texto branca */
+}
+
+img{
+    max-width: 300px;/* Largura máxima da imagem */
+    height: auto;/* Altura automática */
+    display: block;/* Exibe a imagem como bloco */
+    margin: 20px auto;/* Margem automática */
+    border-radius: 10px;/* Bordas arredondadas */
+}
