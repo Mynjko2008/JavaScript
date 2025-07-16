@@ -1,0 +1,40 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página com fundo escuro e texto claro */
+body {
+  background-color: #121212;
+  color: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem;
+}
+
+/* Título principal */
+h1 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+
+/* Parágrafo com margem */
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Botão estilizado */
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 6px;
+  color: #121212;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #008ba3;
+}

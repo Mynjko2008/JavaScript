@@ -1,0 +1,38 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo escuro e cor clara, seguindo o estilo das aulas anteriores */
+body {
+  background-color: #121212;
+  color: #eeeeee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* Estilo do título */
+.titulo {
+  color: #00bcd4;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilo do parágrafo de descrição */
+.descricao {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Caixa personalizada com borda e sombra */
+.caixa {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border: 2px solid #00bcd4;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #00bcd4aa;
+}
