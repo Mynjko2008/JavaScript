@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aula 17 - Eventos e Manipulação do DOM</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Aula 17 - Eventos e Manipulação do DOM</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Exemplo 1: Mudar cor do texto ao clicar no botão</h2>
+            <p id="texto-cor" class="texto">Texto para mudar de cor</p>
+            <button id="botao-cor">Mudar Cor</button>
+        </section>
+
+        <section>
+            <h2>Exemplo 2: Mostrar texto digitado em tempo real</h2>
+            <input type="text" id="input-texto" placeholder="Digite algo aqui..." />
+            <p id="mostrar-texto" class="texto"></p>
+        </section>
+
+        <section>
+            <h2>Exemplo 3: Alerta ao clicar no botão</h2>
+            <button id="botao-alerta">Clique aqui</button>
+        </section>
+
+        <!-- Novo Exemplo 4: Alternar classe CSS para estilizar um elemento -->
+        <section>
+            <h2>Exemplo 4: Alternar classe CSS para estilizar elemento</h2>
+            <div id="caixa" class="caixa">Caixa para estilizar</div>
+            <button id="btn-toggle-classe">Alternar Classe</button>
+        </section>
+
+        <!-- Novo Exemplo 5: Criar e remover elementos dinamicamente -->
+        <section>
+            <h2>Exemplo 5: Criar e remover elementos dinamicamente</h2>
+            <div id="container"></div>
+            <button id="btn-criar-elemento">Criar Parágrafo</button>
+            <button id="btn-remover-elemento">Remover Último Parágrafo</button>
+        </section>
+
+        <!-- Novo Exemplo 6: Manipulação de atributos e eventos -->
+        <section>
+            <h2>Exemplo 6: Alterar atributos e eventos de imagem</h2>
+            <img id="imagem" src="imagem1.jpg" alt="Imagem 1" class="imagem" />
+            <button id="btn-alterar-imagem">Alterar Imagem</button>
+        </section>
+
+        <!-- Novo Exemplo 7: Eventos mouseover e mouseout -->
+        <section>
+            <h2>Exemplo 7: Eventos mouseover e mouseout para alterar estilo</h2>
+            <div id="caixa-hover" class="caixa-hover">Passe o mouse aqui</div>
+        </section>
+
+        <!-- Novo Exemplo 8: Evento de teclado (keydown) -->
+        <section>
+            <h2>Exemplo 8: Detectar tecla pressionada (keydown)</h2>
+            <p>Abra o console do navegador e pressione qualquer tecla.</p>
+        </section>
+
+        <!-- Novo Exemplo 9: Formulário e evento submit -->
+        <section>
+            <h2>Exemplo 9: Formulário com validação e evento submit</h2>
+            <form id="form-contato">
+                <input type="text" id="nome" placeholder="Seu nome" />
+                <input type="email" id="email" placeholder="Seu email" />
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Arthur Mynjko - Aula 17</p>
+    </footer>
+</body>
+
+</html>
