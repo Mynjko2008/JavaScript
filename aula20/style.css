@@ -1,0 +1,97 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #eeeeee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    color: #00bcd4;
+}
+
+main section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #222;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00bcd4aa;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #00bcd4;
+    background-color: #1e1e1e;
+    color: #eee;
+    margin-top: 0.5rem;
+}
+
+button {
+    background-color: #00bcd4;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    color: #121212;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background-color: #008ba3;
+}
+
+.lista {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.lista li {
+    background-color: #1f1f1f;
+    margin: 0.4rem 0;
+    padding: 0.6rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista li:hover {
+    background-color: #2a2a2a;
+}
+
+.lista button {
+    background-color: crimson;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 3px;
+}
+
+.lista button:hover {
+    background-color: darkred;
+}
+
+#nome-salvo {
+    margin-top: 0.8rem;
+    font-weight: bold;
+    color: #00bcd4;
+}
