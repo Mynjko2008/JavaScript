@@ -1,31 +1,27 @@
-//Veja abaixo exemplo de como e quando usar as crases
+// Exemplo de uso de template literals com variáveis
+let nome = 'Arthur'; // String
+let idade = 16; // Número
 
-let nome = 'Arthur'; // Isso é uma string, ou seja, um texto
-let idade = 16; // Número usados sem aspas (simples ou duplas)
-
-let mensagem = `Ola, sou o ${nome} e tenho ${idade} anos`; //Criei uma variavel chamada mensagem para exibir o texto contendo a variavel nome e idade do usuário
-
+let mensagem = `Olá, sou o ${nome} e tenho ${idade} anos.`;
 console.log(mensagem);
 
-// Lição 1: criar uma mensagem para informar profissão e salario de um trabalhador
-let profissao = 'Programador'; 
-let salario = 3000; 
+// Lição 1: criar mensagem com profissão e salário
+let profissao = 'Programador';
+let salario = 3000;
 
-let teste = `Ele é um ${profissao} e recebe por mês ${salario} reais`;
+let mensagemProfissao = `Ele é um ${profissao} e recebe por mês ${salario} reais.`;
+console.log(mensagemProfissao);
 
-console.log(teste);
-//lição 2: cirar uma mensagem para informar a raça de idade de um animal
-let raca = 'Poodle'; 
-let idade1 = 6; 
+// Lição 2: criar mensagem com raça e idade de um animal
+let raca = 'Poodle';
+let idadeAnimal = 6;
 
-let agnaldo = `Ela é uma ${raca} e tem ${idade1} anos`;
+let mensagemAnimal = `Ela é uma ${raca} e tem ${idadeAnimal} anos.`;
+console.log(mensagemAnimal);
 
-console.log(agnaldo);
-
-//let é uma keyword usada para declarar variáveis. Diferentemente da keyword var, as variáveis declaradas com let têm escopo de bloco, o que significa que são visíveis apenas dentro do bloco de código onde foram declaradas (por exemplo, dentro de um if, for, ou dentro de uma função). 
-
-//keyword = Uma palavra-chave é uma palavra que resume os temas principais de um texto. Identifica ideias e temas importantes para servir de referência a pesquisas. Um único parágrafo pode conter várias palavras-chave.
-
-//As aspas simples (') e aspas duplas (") são usadas para definir strings, enquanto a crase (``) é usada para criar template literals. As aspas simples e duplas são intercambiáveis e funcionam de forma idêntica para definir strings normais. A crase, por outro lado, permite a inserção de expressões JavaScript dentro da string, facilitando a interpolação de variáveis e a criação de strings mais complexas. 
-
-//Um terminal de programação, também conhecido como interface de linha de comando (CLI), é uma ferramenta que permite aos programadores interagir com o sistema operacional, executar comandos e gerenciar arquivos através de texto, em vez de uma interface gráfica. É uma tela preta (ou com outra cor) onde se digita comandos que são então processados pelo sistema operacional, permitindo a execução de programas, edição de arquivos e outras tarefas. 
+/* 
+Nota técnica: 
+- let declara variáveis com escopo de bloco (visíveis apenas dentro do bloco onde são definidas).
+- Template literals (crase ``) permitem interpolar expressões e variáveis, facilitando a criação de strings dinâmicas.
+- Aspas simples ('') e duplas ("") definem strings comuns, funcionando de forma equivalente.
+*/

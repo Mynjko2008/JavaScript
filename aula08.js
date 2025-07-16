@@ -1,28 +1,27 @@
 let x = 10;
 let y = 10;
 
-console.log(x === y);
-
-//estou testando se o valor de "X" é igual ao valor de "Y"
-//as respostas vão ser true( verdaderio ) e false ( falso )
+console.log(x === y); 
+// Testa se o valor E o tipo de x são exatamente iguais aos de y
+// Retorna true ou false
 
 let frutas = "Banana";
-let frutas2 = "Maça";
-//aqui estou perguntando se o valor da varial " frutas " é diferente da variavel " frutas2 "
-console.log(frutas !==frutas2)
+let frutas2 = "Maçã";
+
+console.log(frutas !== frutas2);
+// Verifica se frutas é diferente de frutas2
+// Retorna true se os valores forem diferentes
 
 let numero = 19;
 let segundo = 258;
-//estou usando o > ( maior que ) e < (Menor que) para comparar determinas informações
 
 console.log(numero <= 19);
-// = ( significa "recebe" - operador de atribuição )
-// Exemplo: let x = 5; ( a variável x RECEBE o valor 5 )
+// Testa se numero é menor ou igual a 19
+// Retorna true ou false
 
-// == ( significa "igual a" - comparação com conversão de tipo )
-// Verifica se os valores são iguais, convertendo os tipos se necessário
-// Exemplo: 5 == "5" retorna true ( número 5 é considerado igual a string "5" )
-
-// === ( significa "idêntico a" - comparação estrita )
-// Verifica se os valores E os tipos são exatamente iguais
-// Exemplo: 5 === "5" retorna false ( número 5 NÃO é idêntico a string "5" )
+/*
+Operadores importantes:
+=   -> operador de atribuição (exemplo: let x = 5; significa "x recebe 5")
+==  -> igualdade com conversão de tipo (ex: 5 == "5" é true)
+=== -> igualdade estrita (valor e tipo) (ex: 5 === "5" é false)
+*/

@@ -1,44 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aula 3 - Introdução a Strings e Variáveis</title>
 </head>
-
 <body>
     <h1>Teste</h1>
-    <p>Teste da aula de JS</p>
+    <p>Teste da aula de JavaScript</p>
+
     <script>
-        //alert("Bem Vindos a aula de Javascript");
-        //confirm("Está gostando da aula de Javascript?");
-        //prompt("Qual é o seu nome? ")
-        var nome = prompt("Qual é o seu nome? ");
-        alert("Seja Bem Vindo ao curso de Javascript " + nome);
+        // Solicita o nome do usuário
+        let nome = prompt("Qual é o seu nome?");
+        alert("Seja bem-vindo ao curso de JavaScript, " + nome + "!");
 
+        // Exemplo de string com aspas simples
+        let aspasSimples = 'Estamos criando uma String com aspas simples';
 
-        let aspasSimples = 'Estamos criando uma String com aspas Simples';
-        //String em resumo são testo que podem ser utilizados no Javascript
-        //e para utila-lo podemos usar com aspas, simples, duplas ou string template
+        // Template literal permite interpolar expressões e variáveis dentro da string
+        let templateLiteral = `Exemplo de template literal com interpolação: 1 + 1 = ${1 + 1}`;
 
-        let templateLiteral = `String interpolation allows embedding expressions like ${1 + 1}.`;
-        //Essa é uma string tamplate, basicamente usados em casos onde há a necessidade de 
-        //realizar uma ação aritimética(como no exemplo) ou quando guardamos alguma variavel dentro delas.
-        //o simbolo &{} em Javascrit é usado interpolar variaveis, ou seja, para retornar o valor dela.
+        // Exemplo de uso no console
+        console.log(templateLiteral);
 
-        //Interpolar = verbo 1. inserir (palavras ou frases) num texto, para alterar ou adulterar o sentido, ou para completá-lo ou esclarecê-lo. "i. exemplos em um parágrafo" 
-        // 2. transitivo direto alterar (texto) introduzindo palavras ou frases novas. "i. o original de um livro"
+        // Comentário sobre 'let':
+        // 'let' declara variáveis com escopo de bloco, diferente de 'var' que tem escopo de função.
+        // Isso evita problemas de variáveis globais não intencionais.
 
-        let TesteOperacao = `Texto de exemplo para string Template ${1 + 1}`;
-        console.log(TesteOperacao);
+        // Definição simples: keyword (palavra-chave) são termos reservados na linguagem para funções específicas.
 
-        //let é uma keyword usada para declarar variáveis. Diferentemente da keyword var, as variáveis declaradas com let têm escopo de bloco, o que significa que são visíveis apenas dentro do bloco de código onde foram declaradas (por exemplo, dentro de um if, for, ou dentro de uma função). 
+        // Terminal (CLI) é uma interface de texto para interagir com o sistema operacional via comandos.
 
-        //keyword = Uma palavra-chave é uma palavra que resume os temas principais de um texto. Identifica ideias e temas importantes para servir de referência a pesquisas. Um único parágrafo pode conter várias palavras-chave.
-
-        //Um terminal de programação, também conhecido como interface de linha de comando (CLI), é uma ferramenta que permite aos programadores interagir com o sistema operacional, executar comandos e gerenciar arquivos através de texto, em vez de uma interface gráfica. É uma tela preta (ou com outra cor) onde se digita comandos que são então processados pelo sistema operacional, permitindo a execução de programas, edição de arquivos e outras tarefas. 
     </script>
 </body>
-
 </html>

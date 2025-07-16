@@ -1,13 +1,13 @@
 let cor = "vermelho";
 console.log(cor);
 
-cor = "cinza"; // troquei o valor da variavel para "cinza"
+cor = "cinza"; // Alterando o valor da variável para "cinza"
 console.log(cor);
 
-//variáveis do tipo let são total alteraveis, diferentes das variaveis const que não podem ser alteradas pois são constantes
- 
-//Não podes iniciar uma variavel com NUMEROS
-//Ex: atividade1, exemplo01
+// Variáveis declaradas com 'let' podem ter seus valores alterados durante a execução do código.
+// Diferentemente de variáveis declaradas com 'const', que são constantes e não podem ser modificadas.
 
-//não podemos iniciar uma variavel com espaço ou caracteres especiais
-//não podemos iniciar com nomes reservados ex: let, const, function, if, else etc...
+// Regras para nomear variáveis:
+// - Não iniciar nomes com números (ex.: 'atividade1' é válido, '1atividade' não é).
+// - Não usar espaços ou caracteres especiais.
+// - Evitar palavras reservadas da linguagem, como 'let', 'const', 'function', 'if', 'else', etc.

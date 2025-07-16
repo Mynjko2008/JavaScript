@@ -1,30 +1,27 @@
-//Tipo objeto em javascript
-
-// Isso cria um OBJETO chamado "carta" (como uma ficha de Pokémon)
+// Exemplo de objeto em JavaScript: "carta"
+// Um objeto é uma coleção de propriedades que descrevem características ou dados
 const carta = { 
-    // nome: guarda o TIPO da carta (texto)
-    nome: "Pokémon",  // <- Isso é uma PROPRIEDADE
-
-    // habilidade: guarda um NÚMERO (quantos % de habilidade tem)
-    habilidade: 95,   // <- Outra propriedade
-    
-    defesa: 40,      // <- Número de DEFESA
-    ataque: 89,      // <- Número de ATAQUE
-    slogan: "Pokémon Amerelo"  // <- Frase especial da carta
+    nome: "Pokémon",        // Propriedade que guarda o nome do objeto (string)
+    habilidade: 95,         // Propriedade numérica que indica habilidade
+    defesa: 40,             // Valor numérico da defesa
+    ataque: 89,             // Valor numérico do ataque
+    slogan: "Pokémon Amarelo"  // Texto descritivo (string)
 };
-//console.log(`Meu personagem se chama: ${carta.nome} `);
 
+// Objeto mais detalhado: "pokemon"
 const pokemon = {
     nome: "Charizard",
     habilidade: "Blaze",
     hp: 78,
     ataque: 84,
     defesa: 78,
-    sp_atack: 109,
-    sp_def:100,
+    sp_atack: 109,    // Ataque especial
+    sp_def: 100,      // Defesa especial
     velocidade: 100,
     slogan: "Lagartão de fogo"
 };
+
+// Acessando e exibindo as propriedades do objeto pokemon
 console.log(`Meu pokémon se chama: ${pokemon.nome}`);
 console.log(`Sua habilidade é: ${pokemon.habilidade}`);
 console.log(`Seu HP é: ${pokemon.hp}`);
@@ -35,15 +32,18 @@ console.log(`Sua defesa especial é: ${pokemon.sp_def}`);
 console.log(`Sua velocidade é: ${pokemon.velocidade}`);
 console.log(`Seu slogan é: ${pokemon.slogan}`);
 
+// Exemplo de objeto com linguagens de programação
 const linguagensProgramacao = {
-    linguagen1:'Java',
-    linguagen2:'PHP',
-    linguagen3:'Python',
-    linguagen4:'C#',
-    linguagen5:'C++'
+    linguagem1: 'Java',
+    linguagem2: 'PHP',
+    linguagem3: 'Python',
+    linguagem4: 'C#',
+    linguagem5: 'C++'
 };
-console.log(`A linguagem ${linguagensProgramacao.linguagen1} é o inferno na Terra`);
-console.log(`A linguagem ${linguagensProgramacao.linguagen2} é voltada para formularios Back-End`);
-console.log(`A linguagem ${linguagensProgramacao.linguagen3} é perfeita para iniciantes`);
-console.log(`A linguagem ${linguagensProgramacao.linguagen4} é dedicada para aplicativos Windows`);
-console.log(`A linguagem ${linguagensProgramacao.linguagen5} é voltada para programação em jogos`);
+
+// Exibindo informações sobre as linguagens
+console.log(`A linguagem ${linguagensProgramacao.linguagem1} é o inferno na Terra`);
+console.log(`A linguagem ${linguagensProgramacao.linguagem2} é voltada para formulários Back-End`);
+console.log(`A linguagem ${linguagensProgramacao.linguagem3} é perfeita para iniciantes`);
+console.log(`A linguagem ${linguagensProgramacao.linguagem4} é dedicada para aplicativos Windows`);
+console.log(`A linguagem ${linguagensProgramacao.linguagem5} é voltada para programação em jogos`);
