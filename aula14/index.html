@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 14 | JavaScript </title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de Tarefas Avançada</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://kit.fontawesome.com/fec10f46ff.js" crossorigin="anonymous"></script> <!-- Ícones -->
 </head>
 <body>
-    <div id="container">
-        <h3>Minha Lista de tarefas</h3>
+  <div id="container">
+    <h1>📋 Minha Lista de Tarefas</h1>
 
-        <input type="text" id="taskInput" placeholder="Digite aqui suas tarefas">
-
-        <button id="addTask" onclick="addTask()">Adiconar tarefas</button>
-
-        <ul id="taskList">
-            
-        </ul>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Digite sua tarefa..." />
+      <button id="addTask">Adicionar</button>
     </div>
 
-    <script src="script.js"></script>
+    <div class="filter-group">
+      <button class="filter-btn" data-filter="all">Todas</button>
+      <button class="filter-btn" data-filter="pendente">Pendentes</button>
+      <button class="filter-btn" data-filter="concluida">Concluídas</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <button id="clearAll">🧹 Limpar Todas</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

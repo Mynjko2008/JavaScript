@@ -1,16 +1,34 @@
-function changeImage() {
-    const img = document.getElementById('myImage'); //aqui conseguimos armazenar o conteúdo da imagem
-    const currentSrc = img.getAttribute('src'); //aqui pegamos o atributo SRC da imagem, responsável pela alteração da img
+const images = [
+  { src: 'image/arthur.jpg', alt: 'Imagem do Arthur', name: 'Arthur' },
+  { src: 'image/jonh.png', alt: 'Imagem do Jonh', name: 'Jonh' },
+  { src: 'image/Mary.png', alt: 'Imagem da Mary', name: 'Mary' }
+];
 
-    if (currentSrc === 'image/arthur.jpg') { //se a origem da imagem for igual a 'image/arthur.jpg'
-        img.setAttribute('src', 'image/jonh.png'); // usamando o setAttribute, alteramos o valor do atributo src para 'image/jonh.png'
-        img.setAttribute('alt', 'imagem do Jonh'); // aqui alteramos o valor do atributo alt para 'Jonh'
-    } else { //se não, faz o processo inverso 
-        img.setAttribute('src', 'image/arthur.jpg'); // aqui usamos o setAttribute para alterar o valor do atributo src para 'image/arthur.jpg'
-        img.setAttribute('alt', 'imagem do Arthur');// aqui alteramos o valor do atributo alt para 'Arthur'
-    }
+let currentIndex = 0;
 
+function nextImage() {
+  const img = document.getElementById('myImage');
+  const name = document.getElementById('personName');
+
+  // Animação fade-out
+  img.classList.add('fade-out');
+
+  setTimeout(() => {
+    // Atualiza índice
+    currentIndex = (currentIndex + 1) % images.length;
+    
+    const current = images[currentIndex];
+
+    img.src = current.src;
+    img.alt = current.alt;
+    name.textContent = current.name;
+
+    // Remove fade-out para mostrar fade-in
+    img.classList.remove('fade-out');
+  }, 400);
 }
+
+
 // if = se a condição for valida execute algo
 
 // else = caso contrário / se não for valida execute algo

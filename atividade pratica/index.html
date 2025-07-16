@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modificando atributo HTML</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeria Interativa</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-    <h1>Modificando atributo HTML</h1>
 
-    <!-- div criada para inserir imagem -->
+  <main class="container">
+    <h1>🖼️ Galeria Interativa com JavaScript</h1>
 
-    <div>
-        <button onclick="changeImage()">trocar imagem</button> 
-        <img src="image/arthur.jpg" alt="imagem do Arthur" id="myImage">
+    <div class="card">
+      <img id="myImage" src="image/arthur.jpg" alt="Imagem do Arthur" />
+      <p id="personName">Arthur</p>
+      <button onclick="nextImage()">Próxima Imagem</button>
     </div>
+  </main>
 
 </body>
-
 </html>

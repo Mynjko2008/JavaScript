@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modificações de Formato</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="square" id="meuElemento"></div>
 
-    <button onclick=tornarCirculo()>CIRCULO</button>
-    <button onclick=tornarQuadrado()>QUADRADO</button>
-    <button onclick="alterarFormato()">ALTERAR FORMATO</button>
-    <button onclick="verificarClass()">VERIFICAR CLASS</button>
+  <main class="container">
+    <div id="meuElemento" class="square"></div>
 
-    <script src="script.js"></script>
+    <div class="buttons">
+      <button onclick="tornarCirculo()">CÍRCULO</button>
+      <button onclick="tornarQuadrado()">QUADRADO</button>
+      <button onclick="alterarFormato()">ALTERAR FORMATO</button>
+      <button onclick="verificarClass()">VERIFICAR CLASSE</button>
+    </div>
+  </main>
+
 </body>
 </html>

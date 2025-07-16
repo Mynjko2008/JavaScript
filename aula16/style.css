@@ -1,70 +1,143 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 5rem;
-    color: #fff;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    background: #111;
-    gap: 1.5rem;
-}
-header a{
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 1rem;
-}
-.text{
-    font-size: 1.5rem;
-    font-weight: bold;
-
+body {
+  background-color: #111;
+  color: #fff;
+  min-height: 100vh;
 }
 
-/* Estilizando a section */
-.swiper{
-    height: 35rem;
-    position: relative;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  position: sticky;
+  top: 0;
+  background: #111;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
 
-.swiper-slide{
-    background-size: cover;
-    background-position: center;
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #00bcd4;
 }
 
-.carosel-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-    z-index: 10;
-}
-.carosel-text h1{
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+nav a {
+  color: #eee;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-.carosel-text p{
-    font-size: 1.25rem;
+nav a:hover {
+  color: #00bcd4;
 }
 
-.caixa-01{
-    background-image: url(imagens/image_1.jpg);
+/* Seção do carrossel */
+.swiper {
+  position: relative;
+  height: 500px;
+  max-width: 1000px;
+  margin: 2rem auto 4rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 188, 212, 0.7);
 }
-.caixa-02{
-    background-image: url(imagens/image_2.jpg);
+
+/* Slides */
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
 }
-.caixa-03{
-    background-image: url(imagens/image_4.jpg);
+
+/* Texto sobre o carrossel */
+.carrossel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #e0f7fa;
+  text-align: center;
+  text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+  pointer-events: none;
+  user-select: none;
+}
+
+.carrossel-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+  font-weight: 800;
+}
+
+.carrossel-text p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Paginação padrão do swiper */
+.swiper-pagination-bullet {
+  background: #00bcd4;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Botões de navegação */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #00bcd4;
+  transition: color 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #007f8a;
+}
+
+/* Backgrounds das caixas */
+.caixa-01 {
+  background-image: url('imagens/image_1.jpg');
+}
+
+.caixa-02 {
+  background-image: url('imagens/image_2.jpg');
+}
+
+.caixa-03 {
+  background-image: url('imagens/image_3.jpg');
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .carrossel-text h1 {
+    font-size: 2rem;
+  }
+
+  .carrossel-text p {
+    font-size: 1.1rem;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem 2rem;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 15px;
+  }
 }

@@ -1,18 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: black;
-    font-family: Arial, sans-serif;
+  background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #00fff7;
+  text-align: center;
 }
 
-#meuElemento{
-    width: 200px;
-    height: 200px;
-    background-color: chocolate;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
-.square{
-    border-radius: 0%;
+#meuElemento {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(135deg, #00fff7, #005f6a);
+  box-shadow:
+    0 0 15px #00fff7,
+    inset 0 0 25px #00fff7;
+  transition: border-radius 0.6s ease, box-shadow 0.6s ease;
+  cursor: default;
+  border: 2px solid #00fff7;
+  filter: drop-shadow(0 0 10px #00fff7);
+}
+
+.square {
+  border-radius: 0%;
 }
 
 .circle {
-    border-radius: 100%;
+  border-radius: 50%;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  background: linear-gradient(45deg, #00fff7, #005f6a);
+  border: none;
+  color: #002022;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 8px #00fff7;
+  transition: 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  user-select: none;
+}
+
+button:hover,
+button:focus {
+  background: #00fff7;
+  color: #003030;
+  box-shadow: 0 0 20px #00fff7, 0 0 30px #00fff7;
+  outline: none;
+  transform: scale(1.05);
 }

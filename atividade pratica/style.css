@@ -1,15 +1,73 @@
-body{
-    background-color: black; /* Cor de fundo preta */
-    font-family: Arial, sans-serif; /* Fonte padrão */
-    text-align: center; /* Centraliza o texto */
-    margin-top: 50px; /* Margem superior */
-    color: white; /* Cor do texto branca */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img{
-    max-width: 300px;/* Largura máxima da imagem */
-    height: auto;/* Altura automática */
-    display: block;/* Exibe a imagem como bloco */
-    margin: 20px auto;/* Margem automática */
-    border-radius: 10px;/* Bordas arredondadas */
+body {
+  background-color: #121212;
+  font-family: 'Segoe UI', sans-serif;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+img {
+  max-width: 320px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+img.fade-out {
+  opacity: 0;
+}
+
+#personName {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }

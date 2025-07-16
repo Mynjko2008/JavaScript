@@ -1,34 +1,120 @@
-*{
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-#container{
-    margin: 20px auto;
-    border: 5px black solid;
-    max-width: 600px;
-    padding: 30px;
-    border-radius: 10px;
+body {
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+  min-height: 100vh;
 }
 
-#taskList{
-    list-style: none;
-    padding: 0;
+#container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 600px;
 }
 
-button{
-    background-color: blue;
-    margin: top 10px;
-    color: white;
-    padding: 10px 12px;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #343a40;
 }
-#addTask:focus{
-    outline: none;
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
-#addTask:hover{
-    background-color: darkred;
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#taskList {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#taskList li {
+  background-color: #e9ecef;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.4s ease-in;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.remove-btn {
+  background: red;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: darkred;
+}
+
+#clearAll {
+  background-color: #dc3545;
+  width: 100%;
+}
+
+#clearAll:hover {
+  background-color: #b02a37;
+}
+
+.filter-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background-color: #6c757d;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.filter-btn:hover {
+  background-color: #495057;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
