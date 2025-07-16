@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Typed Futurista</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Biblioteca Typed.js para animação de digitação -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <main class="container">
     <div class="typing-box">
+      <!-- Elemento onde o Typed.js exibirá o texto animado -->
       <span id="typed"></span>
     </div>
 
@@ -19,12 +21,12 @@
     <a href="#cadastro" class="btn-futurista">Cadastre-se</a>
 
     <div class="controls">
-        <button onclick="typed.start()">▶ Iniciar</button>
-        <button onclick="typed.stop()">⏸ Pausar</button>
-        <button onclick="typed.reset()">🔄 Resetar</button>
-        <button onclick="changeMessages()">📝 Alterar Mensagens</button>
-      </div>
-      
+      <!-- Botões para controlar a animação Typed.js -->
+      <button onclick="typed.start()">▶ Iniciar</button>
+      <button onclick="typed.stop()">⏸ Pausar</button>
+      <button onclick="typed.reset()">🔄 Resetar</button>
+      <button onclick="changeMessages()">📝 Alterar Mensagens</button>
+    </div>
   </main>
 
   <script src="script.js"></script>

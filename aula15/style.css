@@ -1,38 +1,39 @@
 /* Corpo da página */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0d0d0d; /* Tom mais escuro para dar profundidade */
+    background-color: #0d0d0d; /* Fundo escuro para destaque */
     color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Ocupa toda altura da tela */
     margin: 0;
-    overflow: hidden;
+    overflow: hidden; /* Remove barra de rolagem */
 }
 
-/* Área do texto digitado */
+/* Estilo para o texto digitado com efeito de cursor */
 .typing {
-    font-family: 'Courier New', Courier, monospace; /* Fonte monoespaçada futurista */
+    font-family: 'Courier New', Courier, monospace; /* Fonte monoespaçada para efeito de terminal */
     font-size: 28px;
-    color: #00ffcc; /* Tom neon suave */
-    border-right: 3px solid #00ffcc; /* Simula o cursor */
+    color: #00ffcc; /* Neon suave */
+    border-right: 3px solid #00ffcc; /* Cursor visível */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    animation: blinkCursor 0.75s step-end infinite;
+    animation: blinkCursor 0.75s step-end infinite; /* Cursor piscante */
     padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.02); /* Leve destaque no fundo */
+    background: rgba(255, 255, 255, 0.02); /* Fundo leve */
     border-radius: 8px;
-    box-shadow: 0 0 12px #00ffcc33;
+    box-shadow: 0 0 12px #00ffcc33; /* Brilho sutil */
 }
 
-/* Animação do cursor piscando */
+/* Animação para o cursor piscante */
 @keyframes blinkCursor {
     from { border-right-color: #00ffcc; }
     to { border-right-color: transparent; }
 }
 
+/* Container principal centralizado */
 .container {
     text-align: center;
     display: flex;
@@ -41,6 +42,8 @@ body {
     gap: 24px;
     padding: 40px;
 }
+
+/* Caixa que contém o texto digitado */
 .typing-box {
     font-family: 'Orbitron', sans-serif;
     font-size: 28px;
@@ -56,6 +59,7 @@ body {
     box-shadow: 0 0 18px #00ffcc33;
 }
 
+/* Texto menor abaixo do título */
 .subtexto {
     font-size: 18px;
     color: #cccccc;
@@ -63,6 +67,7 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
+/* Estilo do botão futurista */
 .btn-futurista {
     padding: 12px 32px;
     font-size: 16px;
@@ -82,6 +87,7 @@ body {
     cursor: pointer;
 }
 
+/* Área dos controles dos botões */
 .controls {
     display: flex;
     gap: 12px;
@@ -90,6 +96,7 @@ body {
     justify-content: center;
 }
 
+/* Botões dos controles */
 .controls button {
     background-color: transparent;
     border: 2px solid #00ffcc;
@@ -107,4 +114,3 @@ body {
     color: #0d0d0d;
     box-shadow: 0 0 10px #00ffcc88;
 }
-
